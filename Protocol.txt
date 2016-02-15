@@ -1,0 +1,23 @@
+##Protocol
+
+Note that elements below contained in square brackets ([]) are variables that you must set. Refer to the README.md file for detailed instructions and a demonstration of this workflow on a toy data set. 
+
+* Step 1: download the installer and python scripts from https://www.dropbox.com/sh/mv897k0hx8uykaj/AADe573fxGV4loTPy5GQ48tUa?dl=0. Make sure these files are in the same directory. 
+* Step 2: install the toolbox and reference indexes by executing the installer script, install.sh. 
+* Step 3: add the sbcapseq toolbox scripts to your system paths using the following command:
+    export PATH=$HOME/nnlab/sbcapseq/bin:$PATH
+
+* Step 4: Convert the Ion Torrent sequencing data to FASTQ format, if it is not already in this format. This can be done using samtools and the sam2fastq.py script:
+** Step 4.a: Converting SAM to FASTQ: 
+    samtools view -S [reads.sam] | sam2fastq.py - > [reads.fastq]
+
+** Step 4.b: Converting BAM to FASTQ: 
+    samtools view [reads.sam] | sam2fastq.py - > [reads.fastq]
+
+* Step 5: map the FASTQ reads to mouse TA sites using the fastq2tas.py script:
+    fastq2tas.py $HOME/nnlab/sbcapseq/srv [reads.fastq]
+
+This will generate a folder containing a file detailing the TA sites (insertions.txt) and a log file giving a breakdown of reads that made mapped to TA sites (log.json). 
+
+* Step 6: convert the TA sites to BED format, and map potential hotspots, using the following command:
+    tas2bed.py -f [insertions.txt] | maskbed.py $HOME/nnlab/sbcapseq/srv/protonMaskSites.bed - > [insertions.bed]
