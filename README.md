@@ -17,7 +17,7 @@ The SBCaptureSeq analysis workflow can be installed using the automated script (
 
 The script installs Bowtie 2.2.5, Samtools 0.1.19, Tabix 0.2.6, and Python 2.7, and custom python code to the ```$HOME/nnlab/sbcapseq``` directory. It additionally downloads mm9 fastq sequences, generates an mm9+pT2/Onc2 reference, and indexes the reference. The entire installation process takes about three hours, with the bulk of time devoted to indexing. 
 
-You should run the installer script from the command line so you can track it's progress. To execute the installer from the command line, navigate to the directory containing the script, then run:
+You should run the installer script from the command line so you can track it's progress. To execute the installer from the command line, navigate to the directory containing the installer script, then run:
 
 ```
 bash install.sh

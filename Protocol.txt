@@ -2,9 +2,10 @@
 
 Note that elements below contained in square brackets ([]) are variables that you must set. Refer to the README.md file for detailed instructions and a demonstration of this workflow on a toy data set. 
 
-* Step 1: download the required installer and python scripts from https://github.com/jynewberg/sbcapseq. Before running the installer ('install.sh'), make sure it is in the same directory as the 'python' directory, the latter which must contain the python scripts.
+* Step 1: download the required installer and python scripts from https://github.com/jynewberg/sbcapseq. If you download the master archive (https://github.com/jynewberg/sbcapseq/archive/master.zip), make sure to unzip the contents. Once you do this, you should see an installer script ('install.sh'), a python directory, and some documentation and license files. 
 
-* Step 2: install the toolbox and reference indexes by executing the installer script, install.sh.
+* Step 2: install the toolbox and reference indexes by executing the installer script ('install.sh'). In a terminal emulator, navigate to the directory containing the installer, then run:
+    bash install.sh
 
 * Step 3: add the sbcapseq toolbox scripts to your system paths using the following command:
     export PATH=$HOME/nnlab/sbcapseq/bin:$PATH
