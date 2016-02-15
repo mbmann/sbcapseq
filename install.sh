@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+initpath=`pwd`
+
 rootdir="$HOME/nnlab/sbcapseq"
 execdir="$rootdir/bin"
 srcdir="$rootdir/var/src"
@@ -640,19 +642,19 @@ chrX	72889462	72889463" > "$srvdir"/protonMaskSites.bed
 
 echo "Installing python scripts"
 
-cp python/indexTAtracks.py "$execdir"
+cp "$initpath"/python/indexTAtracks.py "$execdir"
 chmod 744 "$execdir"/indexTAtracks.py
 
-cp python/sam2fastq.py "$execdir"
+cp "$initpath"/python/sam2fastq.py "$execdir"
 chmod 744 "$execdir"/sam2fastq.py
 
-cp python/fastq2tas.py "$execdir"
+cp "$initpath"/python/fastq2tas.py "$execdir"
 chmod 744 "$execdir"/fastq2tas.py
 
-cp python/tas2bed.py "$execdir"
+cp "$initpath"/python/tas2bed.py "$execdir"
 chmod 744 "$execdir"/tas2bed.py
 
-cp python/maskbed.py "$execdir"
+cp "$initpath"/python/maskbed.py "$execdir"
 chmod 744 "$execdir"/maskbed.py
 
 ########################################################
