@@ -2,7 +2,7 @@
 
 Note that elements below contained in square brackets ([]) are variables that you must set. Refer to the README.md file for detailed instructions and a demonstration of this workflow on a toy data set. 
 
-* Step 1: download the installer and python scripts from https://www.dropbox.com/sh/mv897k0hx8uykaj/AADe573fxGV4loTPy5GQ48tUa?dl=0. Make sure these files are in the same directory. 
+* Step 1: download the required installer and python scripts from https://github.com/jynewberg/sbcapseq. Make sure these files are in the same directory. 
 * Step 2: install the toolbox and reference indexes by executing the installer script, install.sh. 
 * Step 3: add the sbcapseq toolbox scripts to your system paths using the following command:
     export PATH=$HOME/nnlab/sbcapseq/bin:$PATH

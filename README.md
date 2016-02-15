@@ -13,7 +13,7 @@ MacOS 10.9+ with Xcode 5+
 RHEL 6.5, 6.6, 6.7 with gcc/g++ 4.4+
 
 ##Installation
-The SBCaptureSeq analysis workflow can be installed using an automated script (```install.sh```) provided [here](https://www.dropbox.com/sh/mv897k0hx8uykaj/AADe573fxGV4loTPy5GQ48tUa?dl=0). Make sure to download the custom python scripts ```sam2fastq.py```, ```fastq2tsv.py```, ```tsv2bed.py```, and ```maskbed.py``` to the same directory to which you download the installer. 
+The SBCaptureSeq analysis workflow can be installed using the automated script (```install.sh```). Make sure to download the custom python scripts ```sam2fastq.py```, ```fastq2tsv.py```, ```tsv2bed.py```, and ```maskbed.py``` to the same directory to which you download the installer. 
 
 The script installs Bowtie 2.2.5, Samtools 0.1.19, Tabix 0.2.6, and Python 2.7, and custom python code to the ```$HOME/nnlab/sbcapseq``` directory. It additionally downloads mm9 fastq sequences, generates an mm9+pT2/Onc2 reference, and indexes the reference. The entire installation process takes about three hours, with the bulk of time devoted to indexing. 
 
