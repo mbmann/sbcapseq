@@ -53,7 +53,7 @@ while True:
   if line[0]!='>':
     lines.append(line)
   else:
-    if chrom!='':run_thing(chrom,lines)
+    if chrom!='':subfun(chrom,lines)
     chrom=line[1:]
     lines=[]
 
