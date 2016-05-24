@@ -59,7 +59,7 @@ By default, this function will create a folder with a name similar to the input 
 * Column 7: the unique read/fragment depth on the left and right side of the TA site
 * Column 8: the transposon insertion orientation with respect to the chromosome, where '+' is forward and '-' is reverse. 
 
-This script takes an optional argument, ```-n-```, which allows the user to change the dataset name. If the option is not specified, then sequencing run ID (embedded in the fastq sequence headers) is used.
+This script takes an optional argument, ```-n```, which allows the user to change the dataset name. If the option is not specified, then sequencing run ID (embedded in the fastq sequence headers) is used.
 
 ###Post-process sites and store them in BED format
 The final step is to convert the TA sites into the BED format, as this can be loaded into various genome browsers and superimposed with gene/transcript annotations for and used in downstream analysis. To convert the TA sites to BED format, run the following command:
