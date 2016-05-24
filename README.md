@@ -1,6 +1,6 @@
 
 #SBCaptureSeq README
-Last modified 2016-02-15
+Last modified 2016-05-24
 
 ##Requirements
 
