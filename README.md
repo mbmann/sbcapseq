@@ -23,6 +23,9 @@ You should run the installer script from the a bash session (in your terminal of
 bash install.sh
 ```
 
+##Obtaining a toy SBCaptureSeq dataset
+If the file ```sbcaptureseq-toy.bam``` is not contained with this code, you can download a copy of the dataset from [Figshare](https://figshare.com/s/b5e1c6d3a14edc61c6b0). This dataset will be useful for working through the tutorial. The file is in bam format and is about 30MB in size. 
+
 ##Tutorial
 
 ###Add sbcapseq toolbox to system path
