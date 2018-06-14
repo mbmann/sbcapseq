@@ -1,4 +1,4 @@
-##Protocol
+## Protocol
 
 Note that elements below contained in square brackets ([]) are variables that you must set. Refer to the README.md file for detailed instructions and a demonstration of this workflow on a toy data set. 
 
@@ -14,7 +14,7 @@ Note that elements below contained in square brackets ([]) are variables that yo
 ** Step 4.a: Converting SAM to FASTQ: 
     samtools view -S [reads.sam] | sam2fastq.py - > [reads.fastq]
 
-** Step 4.b: Converting BAM to FASTQ: 
+* Step 4.b: Converting BAM to FASTQ: 
     samtools view [reads.sam] | sam2fastq.py - > [reads.fastq]
 
 * Step 5: map the FASTQ reads to mouse TA sites using the fastq2tas.py script:
