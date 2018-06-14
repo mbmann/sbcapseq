@@ -1,18 +1,18 @@
 
-#SBCaptureSeq README
+# SBCaptureSeq README
 Last modified 2016-05-24
 
-##Requirements
+## Requirements
 
 ###Minimum hardware specs
 64-bit architecture, 8 GB RAM, 20 GB disk space, Intel Core i5 processor
 
-###Tested software configurations
+### Tested software configurations
 MacOS 10.9+ with Xcode 5+ and bash 3.2+
 
 RHEL 6.5, 6.6, 6.7 with gcc/g++ 4.4+ and bash 4.1+
 
-##Installation
+## Installation
 The SBCaptureSeq analysis workflow can be installed using the automated script (```install.sh```). 
 
 The script installs Bowtie 2.2.5, Samtools 0.1.19, Tabix 0.2.6, and Python 2.7, and custom python code to the ```$HOME/nnlab/sbcapseq``` directory. It additionally downloads mm9 fastq sequences, generates an mm9+pT2/Onc2 reference, and indexes the reference. The entire installation process takes about three hours, with the bulk of time devoted to indexing. 
@@ -23,10 +23,10 @@ You should run the installer script from the a bash session (in your terminal of
 bash install.sh
 ```
 
-##Obtaining a toy SBCaptureSeq dataset
+## Obtaining a toy SBCaptureSeq dataset
 If the file ```sbcaptureseq-toy.bam``` is not contained with this code, you can download a copy of the dataset from [Figshare](https://figshare.com/s/b5e1c6d3a14edc61c6b0). This dataset will be useful for working through the tutorial. The file is in bam format and is about 30MB in size. 
 
-##Tutorial
+## Tutorial
 
 ###Add sbcapseq toolbox to system path
 Before running any of the subsequent steps, open a bash session, then make sure the code you installed is in your system path. Simply copy and paste the following command into your terminal: 
@@ -46,7 +46,7 @@ samtools view sbcapseq-toy.bam | sam2fastq.py - > sbcapseq-toy.fastq
 
 This will produce a FASTQ file, ```sbcapseq-toy.fastq``` in your current working directory suitable for downstream analysis.
 
-###Map sequencing reads to TA sites in mouse
+### Map sequencing reads to TA sites in mouse
 Sequences are mapped to TA sites using the ```fastq2tas.py``` script. Run the following command from the directory containing the FASTQ file you want to analyze:
 
 ```
@@ -64,7 +64,7 @@ By default, this function will create a folder with a name similar to the input 
 
 This script takes an optional argument, ```-n```, which allows the user to change the dataset name. If the option is not specified, then sequencing run ID (embedded in the fastq sequence headers) is used.
 
-###Post-process sites and store them in BED format
+### Post-process sites and store them in BED format
 The final step is to convert the TA sites into the BED format, as this can be loaded into various genome browsers and superimposed with gene/transcript annotations for and used in downstream analysis. To convert the TA sites to BED format, run the following command:
 
 ```
