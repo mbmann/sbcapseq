@@ -4,7 +4,7 @@ Last modified 2016-05-24
 
 ## Requirements
 
-###Minimum hardware specs
+### Minimum hardware specs
 64-bit architecture, 8 GB RAM, 20 GB disk space, Intel Core i5 processor
 
 ### Tested software configurations
