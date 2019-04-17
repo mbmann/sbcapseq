@@ -81,3 +81,6 @@ The ```tas2bed.py``` script calculates calculates a single read-depth score for 
 The ```tas2bed.py``` script can be called with a few different options. if ```-f fragments``` is used, sequence fragments will be reported instead of reads. Setting the length filter to remove reads with less than 25 bases (e.g. ```-l 25```) can help to reduce possible noisy results, as can setting the depth filter (e.g. ```-s 10```). These parameters can be used to filter out low frequency TA sites that may not reproduce adequately across different experiments, and can be set based on empirical knowledge. 
 
 The ```maskbed.py``` script masks the bedfile for sites that are known hotspots. These hotspots were determined empirically by looking for sites that overlapped across different experiments. 
+
+##End
+
