@@ -28,7 +28,7 @@ If the file ```sbcaptureseq-toy.bam``` is not contained with this code, you can 
 
 ## Tutorial
 
-###Add sbcapseq toolbox to system path
+### Add sbcapseq toolbox to system path
 Before running any of the subsequent steps, open a bash session, then make sure the code you installed is in your system path. Simply copy and paste the following command into your terminal: 
 
 ```
@@ -37,7 +37,7 @@ export PATH=$HOME/nnlab/sbcapseq/bin:$PATH
 
 After doing this, you can invoke the SBCapSeq scripts from any working directory while in your current bash session. Note that ```$HOME``` and ```$PATH``` are variables already predefined in the bash environment. 
 
-###Convert data to FASTQ format from BAM format
+### Convert data to FASTQ format from BAM format
 Ion Torrent data can be exported in the BAM or FASTQ formats. Since BAM can store flow information, it is a recommended format for Ion Torrent data so you'll likely be dealing with this. However, the SBCaptureSeq workflow does not utilize flow information, and works from the FASTQ format. If you are starting with BAM formatted data, you can use samtools with the ```sam2fastq.py``` script to convert the sequences to FASTQ. Navigate to the directory containing the BAM file you downloaded with this toolbox, then run:
 
 ```
